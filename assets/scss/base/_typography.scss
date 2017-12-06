@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+  color: $custom-font-body;
+  font-family: $base-font-family;
+  //font-feature-settings: "kern", "liga", "pnum";
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: $small-spacing 0 $small-spacing 0;
+  font-weight: 300;
+  color: $custom-gray;
+}
+
+h1 {
+  font-size: rem(30);
+}
+
+h2 {
+  font-size: rem(26);
+}
+
+h3 {
+  font-size: rem(24);
+}
+
+h4 {
+  font-size: rem(20);
+}
+
+h5,
+h6 {
+  font-size: rem(16);
+}
+
+p {
+  margin: 0 0 $small-spacing;
+
+  &.lead {
+    font-size: rem(22);
+    font-weight: 300;
+  }
+}
+
+a {
+  color: $custom-blue;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $custom-blue;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  padding: 0 0 0 $base-spacing;
+  margin: $base-spacing 0;
+  color: $medium-gray-color;
+  line-height: 1.8;
+  border-left: $small-spacing solid $custom-blue;
+}
+
+code {
+  background: none;
+  border-radius: 0;
+  border: none;
+  font-family: $base-font-family;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0 5px;
+  background-color: $custom-code-bg;
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: $base-font-family;
+  font-size: 0.85em;
+  margin: 0;
+  padding: 5px 10px !important;
+  overflow: auto;
+  max-height: 60em;
+  white-space: pre;
+
+  code {
+    line-height: 1.75em;
+    padding: 0 !important;
+  }
+}
+
+strong {
+  font-weight: bold;
+  color: $custom-gray;
+}
+
+em {
+  font-style: italic;
+}
+
+ul,
+ol,
+dl {
+    margin-top: 0;
+    margin-left: 1.2em;
+    margin-bottom: 1rem;
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: none;
+}

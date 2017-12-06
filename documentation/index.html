@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home
+---
+
+<section class="post-list">
+  <div class="container">
+    <h2 class="category-title">Articles</h2>
+    {% for post in site.posts %}
+      <article class="post-item">
+        <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

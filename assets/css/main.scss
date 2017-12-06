@@ -1,0 +1,17 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "main";
+
+
+.post-content img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+.post-item .article-title {
+  width: 100%;
+}
