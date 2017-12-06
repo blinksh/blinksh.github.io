@@ -5,7 +5,7 @@ title2: "" # default: ""
 description: "Blink Shell Documentation"
 keywords: "blink shell, documentation"
 url: blinksh.github.io # site url
-baseurl: "/documentation" # apply repo name if use it under gh-pages branch
+baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 google_analytics: UA-84834352-1
